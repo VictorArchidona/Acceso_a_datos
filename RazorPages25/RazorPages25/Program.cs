@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 //builder.Services.AddSingleton<IAlumnoRepositorio, AlumnoRepositorioDB>();
 builder.Services.AddTransient<IAlumnoRepositorio, AlumnoRepositorioDB>();
+builder.Services.AddTransient<CalificacionRepositorio>();
 builder.Services.AddTransient<AsignaturaRepositorio>();
 builder.Services.AddTransient<ProfesorRepositorio>();
 

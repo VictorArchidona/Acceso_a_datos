@@ -20,6 +20,10 @@ namespace RazorPages25.Pages.Calificaciones
 
         [BindProperty(SupportsGet = true)]
         public int alumnoSeleccionado { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public Calificacion calificacion { get; set; }
+
         public insertarModel(AsignaturaRepositorio asignaturaRepositorio, IAlumnoRepositorio alumnoRepositorio)
         {
             AsignaturaRepositorio = asignaturaRepositorio;

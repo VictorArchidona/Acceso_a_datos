@@ -42,8 +42,12 @@
             <option value="">-- Seleccione un alumno --</option>
             @foreach (var alumno in Model.alumnos)
             {
-                <option value="@alumno.Id">@alumno.Nombre</option>
+                <option value="@alumno.Id" label="@alumno.Nombre">@alumno.Nombre</option>
             }
         </select>
+    </div>
+    <div>
+		<label for="Nota">Nota:</label>
+        <input asp-for="calificacion.nota" class="form-control" min="1" max="10" />
     </div>
 </form>

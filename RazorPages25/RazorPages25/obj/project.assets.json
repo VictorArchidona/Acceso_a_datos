@@ -5889,23 +5889,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anton\\.nuget\\packages\\": {},
+    "C:\\Users\\Victor\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anton\\Desktop\\2ºGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\RazorPages25.csproj",
+      "projectUniqueName": "C:\\Users\\Victor\\Documents\\GitHub\\Acceso_a_datos_Antonio\\RazorPages25\\RazorPages25\\RazorPages25.csproj",
       "projectName": "RazorPages25",
-      "projectPath": "C:\\Users\\anton\\Desktop\\2ºGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\RazorPages25.csproj",
-      "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anton\\Desktop\\2ºGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages25\\obj\\",
+      "projectPath": "C:\\Users\\Victor\\Documents\\GitHub\\Acceso_a_datos_Antonio\\RazorPages25\\RazorPages25\\RazorPages25.csproj",
+      "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Victor\\Documents\\GitHub\\Acceso_a_datos_Antonio\\RazorPages25\\RazorPages25\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5914,15 +5914,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\anton\\Desktop\\2ºGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages.Services\\RazorPages.Services.csproj": {
-              "projectPath": "C:\\Users\\anton\\Desktop\\2ºGS\\ACCESO_A_DATOS\\Acceso_a_datos\\RazorPages25\\RazorPages.Services\\RazorPages.Services.csproj"
+            "C:\\Users\\Victor\\Documents\\GitHub\\Acceso_a_datos_Antonio\\RazorPages25\\RazorPages.Services\\RazorPages.Services.csproj": {
+              "projectPath": "C:\\Users\\Victor\\Documents\\GitHub\\Acceso_a_datos_Antonio\\RazorPages25\\RazorPages.Services\\RazorPages.Services.csproj"
             }
           }
         }
@@ -5979,7 +5978,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }
