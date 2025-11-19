@@ -40,6 +40,23 @@ namespace RazorPages25.Pages.Calificaciones
             asignaturas = AsignaturaRepositorio.GetAsignaturasCurso(curso).ToList();
             // Corregido: Usar GetAlumnosCurso para obtener List<Alumno>
             alumnos = AlumnoRepositorio.GetAlumnosCurso(curso).ToList();
+            calificacion = CalificacionRepositorio.GetCalificacionesConvAsign(Convocatoria convocatoria, int asignatura);
+        }
+        public IActionResult OnPost()
+        {
+            if(!ModelState.IsValid)
+                return Page();
+            
+            calificacionRepositorio.Insertar(calificacion);
+
+            TempData["Mensaje"] = "Calificación insertada correctamente";
+
+            return RedirectToPage(new
+            {
+                convocatoria = calificacion.convocatoria,
+                curso = curso,
+                asignaturaID = calificacion.asignaturaID
+            });//Vuelve a limpiar la pagina
         }
     }
 }

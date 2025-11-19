@@ -7,8 +7,8 @@
 <h2>Insertar Calificación</h2>
 <form method="get">
     <div>
-        <label for="Convocatoria">Convocatoria:</label>
-        <select id="Convocatoria" name="Convocatoria" class="form-select">
+        <label for="calificacion.convocatoria">Convocatoria:</label>
+        <select id="calificacion.convocatoria" name="Convocatoria" class="form-select">
             @foreach (var convocatoria in Model.Convocatoria)
                         {
                 <option value="@convocatoria">@convocatoria</option>
@@ -49,5 +49,16 @@
     <div>
 		<label for="Nota">Nota:</label>
         <input asp-for="calificacion.nota" class="form-control" min="1" max="10" />
+    </div>
+</form>
+
+<form method="post">
+    <input asp-for="calificacion.convocatoria" type="hidden" />
+    <input asp-for="curso" type="hidden" />
+	<input asp-for="calificacion.asignaturaID" type="hidden" />
+    <input asp-for="calificacion.alumnoID" type="hidden"/>
+
+    <div class="fila">
+        <button type="submit">Insertar</button>
     </div>
 </form>
