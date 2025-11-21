@@ -40,6 +40,8 @@ namespace RazorPages25.Pages.Calificaciones
             asignaturas = AsignaturaRepositorio.GetAsignaturasCurso(curso).ToList();
             // Corregido: Usar GetAlumnosCurso para obtener List<Alumno>
             alumnos = AlumnoRepositorio.GetAlumnosCurso(curso).ToList();
+            if(asignaturaID != 0)
+                calificacion.asignaturaID = asignaturaID;
             calificacion = CalificacionRepositorio.GetCalificacionesConvAsign(Convocatoria convocatoria, int asignatura);
         }
         public IActionResult OnPost()
@@ -47,7 +49,7 @@ namespace RazorPages25.Pages.Calificaciones
             if(!ModelState.IsValid)
                 return Page();
             
-            calificacionRepositorio.Insertar(calificacion);
+            CalificacionRepositorio.Insertar(calificacion);
 
             TempData["Mensaje"] = "Calificación insertada correctamente";
 
